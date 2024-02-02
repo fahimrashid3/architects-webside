@@ -130,6 +130,10 @@ main{
 .text-card{
     font-size: 1.5rem;
 }
+.feature-title{
+    border-left: 6px solid #FF900E;
+    padding-left: 10px;
+}
 
 /* facts related css style */
 
@@ -326,11 +330,7 @@ main{
         max-width: 800px;
 
     }
-    #features-text-outside-card{
-        max-width: 800px;
-
-
-    }
+   
     .text-card{
         font-size: 1rem;
         max-width: 990px;
@@ -339,6 +339,9 @@ main{
     #img{
         width: 800px;
         padding: 0px;
+    }
+    #features-text-outside-card{
+        width: 800px;
     }
 
 
