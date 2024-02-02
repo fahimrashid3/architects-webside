@@ -20,6 +20,11 @@
 .text-light-gray{
     color: #727272;
 }
+.text-dark{
+    font-size:3rem;
+    font-weight:700;
+    color: #131313;
+}
 
 /* Header(nav) related css style */
 header{
@@ -45,11 +50,7 @@ nav li a{
     text-decoration: none;
     color: #424242;
 }
-.nav-title{
-    font-size:3rem;
-    font-weight:700;
-    color: #131313;
-}
+
 /* banner related css style */
 .banner-content{
     display: flex;
@@ -81,21 +82,21 @@ main{
     max-width: 1440px;
     margin: 0 auto;
 }
-/* features section related css style */
-.features-container{
+/* team section related css style */
+.team-container{
     display: flex;
     gap: 1.5rem;
     align-items: center;
     margin-top: 4rem;
     
 }
-.features-img{
+.team-img{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
-.features-title{
+.team-title{
     font-size: 3rem;
 }
 .quick-list{
@@ -109,6 +110,41 @@ main{
     color: #FF900E;
     font-weight: 700;
 }
+/* features related css  */
+
+/* facts related css style */
+
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.facts-card{
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    min-width: 1.5rem;
+}
+.facts-text{
+    max-width: 50rem;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* responsive media queries for mobile device */
@@ -116,7 +152,7 @@ main{
     header{
         padding: 20px;
     }
-    nav ,.features-container {
+    nav ,.team-container {
         flex-direction: column;
     } 
     .nav-title{
@@ -140,29 +176,63 @@ main{
         width: 95%;
     }
 
-    /* features section related css style */
+    /* team section related css style */
 
-    .features-img{
+    .team-img{
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-    .features-content{
+    .team-content{
         display: flex;
         flex-direction: column;
         align-items: center;
     } 
-    .features-title{
+    .team-title{
         text-align: center;
     }
-    .features-container{
+    .team-container{
         margin-top: 2rem;
         gap: .5rem;
     }
-    .feture-description{
+    .team-description{
         padding-left: .4rem;
     }
+
+    /* features related css  */
+
+/* facts related css style */
+.facts-container{
+    grid-template-columns: repeat(2,1fr);
+}
+.facts-img{
+    padding:.8rem;
+}
+
+
+
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsive media queries for tablet device */
 @media screen and (min-width: 576px) and (max-width:992px) {
@@ -171,21 +241,30 @@ main{
         padding: 20px;
     }
 
-    .features-container{
+    .team-container{
         flex-direction: column;
     }
-    .features-content{
+    .team-content{
         display: flex;
         flex-direction:column;
        align-items: center;
     }
-    .features-title{
+    .team-title{
         text-align: center;
     }
-    .feture-description{
+    .team-description{
         margin: 0 4rem;
         margin-bottom: 30px;
         text-align: center;
     }
+
+
+    /* features related css  */
+
+/* facts related css style */
+
+
+
+
 
 }
