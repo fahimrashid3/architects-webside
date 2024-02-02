@@ -16,6 +16,11 @@
     font-weight: 600px;
     cursor: pointer;
 }
+.p-text{
+    max-width: 50rem;
+    margin-left: 20px;
+}
+
 
 .text-light-gray{
     color: #727272;
@@ -125,9 +130,18 @@ main{
     text-align: center;
     min-width: 1.5rem;
 }
-.facts-text{
-    max-width: 50rem;
-    margin-left: 20px;
+
+
+/* sponsors section */
+.sponsors-img-container{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.sponsor-img{
+    cursor: pointer;
+    margin-top: 1.5rem;
 }
 
 
@@ -149,6 +163,10 @@ main{
 
 /* responsive media queries for mobile device */
 @media screen and (max-width:576px){
+    /* common */
+    .p-text{
+        text-align: center;
+    }
     header{
         padding: 20px;
     }
@@ -193,6 +211,7 @@ main{
     .team-container{
         margin-top: 2rem;
         gap: .5rem;
+    
     }
     .team-description{
         padding-left: .4rem;
@@ -206,6 +225,14 @@ main{
 }
 .facts-img{
     padding:.8rem;
+}
+/* sponsors related css */
+.sponsors-img-container{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+
 }
 
 
@@ -235,7 +262,7 @@ main{
 
 
 /* responsive media queries for tablet device */
-@media screen and (min-width: 576px) and (max-width:992px) {
+@media screen and (min-width: 577px) and (max-width:992px) {
 
     header{
         padding: 20px;
@@ -262,9 +289,26 @@ main{
     /* features related css  */
 
 /* facts related css style */
+.facts-container{
+    display: flex;
+justify-content: space-around;
+}
+.facts-card{
+    background-color: aliceblue;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    width: 12rem;
+}
 
+/* sponsor related css */
+.sponsors-img-container{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
 
-
+}
 
 
 }
